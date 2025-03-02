@@ -1,0 +1,120 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* App Container */
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 280px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-box input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.search-box button {
+  margin-left: 10px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+  background: #ff9800;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background: #e68900;
+}
+
+/* Weather Info */
+.weather-info {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  width: 300px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.weather-info h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.weather-info h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.weather-info .description {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Loading and Error Messages */
+.loading,
+.error {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  color: #ff9800;
+  font-weight: 500;
+}
